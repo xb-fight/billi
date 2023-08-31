@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-border: #f4f4f5;
+}
+
+body {
+    font-size: 14px;
+    color: #888;
+}
+
+.btn {
+    width: 120px;
+    height: 30px;
+    color: #000;
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+
+a {
+    text-decoration: none;
+    color: #11b3ed;
+}
+
+img {
+    max-width: 100%;
+}
+
+input {
+    height: 25px;
+    border: 0;
+    outline: 0;
+    offset: none;
+    background-color: transparent;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px traspa inset;
+    box-shadow: 0 0 0 1000px red inset;
+}
+
+
+
+
+
+.mask {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.container {
+    width: 820px;
+    padding: 80px 140px;
+    background-color: #fff;
+    background-image: url('./asset/left\ bottom.png'), url('./asset/right\ bottom.png');
+    background-position: left bottom, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 20%, 20%;
+    position: relative;
+}
+
+.login {
+    display: flex;
+}
+
+.login .OR-code {
+    padding-right: 40px;
+    text-align: center;
+    flex: 0 0 200px;
+
+    position: relative;
+}
+
+.login .OR-code::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 215px;
+    background-color: #c9ccd0;
+    position: absolute;
+    top: 34px;
+    right: 0;
+}
+
+
+.login .OR-code>h2 {
+    color: #000;
+    margin: 10px auto;
+}
+
+
+.login .OR-code>p {
+    margin: 10px;
+}
+
+.text-login {
+    margin: 0 40px;
+}
+
+.text-login .title {
+    display: flex;
+}
+
+.text-login .title h2 {
+    width: 50%;
+    margin: 10px 0;
+    text-align: center;
+
+}
+
+.text-login .title h2.active {
+    color: #6eb4df;
+}
+
+.text-password {
+    border: 2px solid var(--color-border);
+    border-radius: 5px;
+}
+
+.text-password .text {
+    border-bottom: 2px solid var(--color-border);
+}
+
+.text-password input {
+    padding: .5em;
+}
+
+.text-password>div {
+    padding: 0 1em;
+}
+
+.button {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form button {
+    margin: 10px 0;
+}
+
+
+.form button.active {
+    color: #fff;
+    background-color: #11b3ed;
+    border: 0;
+}
+
+
+.other-login>p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.other-login .other-login-container {
+    display: flex;
+}
+
+
+.other-login .other-login-container .other-login-item img {
+    width: 25px;
+    vertical-align: -10px;
+}
+
+.protocol {
+    padding: 0 5em;
+    text-align: center;
+}
+
+.cacel {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 2px #eee;
+}
